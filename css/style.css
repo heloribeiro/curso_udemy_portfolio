@@ -1,0 +1,445 @@
+/* Construção da Página Capa (Home) */
+
+html, body {
+
+	margin: auto;
+	padding: auto;
+}
+
+body {
+
+	background-color: #8a8b8a;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.navegation {
+	background-color: #8a8b8a;
+	color: #ffffff;
+	height: 50px;
+
+	animation-name: navegacao;
+	animation-duration: 4s;
+
+}
+
+.navegation ul {
+
+	margin-top: auto;
+	list-style: none;
+	padding-left: 0px;
+	text-align: right;
+	/*background-color: red;*/
+	height: 50px;
+} 
+
+.navegation li {
+
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	/*background-color: green;*/
+	line-height: 50px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.navegation a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.navegation a:hover {
+	color: #ab2430;
+}
+
+.navegation li.menu-cel {
+	display: none;
+}
+
+.navegation li.menu-cel:hover {
+	color: #ab2430;
+	cursor: pointer;
+
+}
+
+
+.capa {
+
+	color: #ffffff;	
+}
+
+.capa span {
+
+	color: #ab2430;
+	display: block;
+}
+
+.capa div {
+
+	display: inline-block;
+	height: 650px;
+}
+
+.profile-pic {
+	/*background-color: yellow;*/
+	width: 40%;
+	text-align: center;
+
+	animation-name: profile-capa;
+	animation-duration: 5s;
+
+}
+
+.profile-pic img {
+    
+    width: 310px;
+    border-radius: 310px;
+    margin-top: 100px;
+}
+
+
+.profile-title {
+	/*background-color: red;*/
+	vertical-align: top;
+	width: 59%;
+
+	animation-name: profile-titulo;
+	animation-duration: 5s;
+
+}
+
+.profile-title h1 {
+
+	margin-top: 200px;
+	font-size: 58px;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 58px;
+}
+
+.profile-title h2 {
+
+    font-size: 16px; 
+	font-weight: 100;
+	margin-top: -30px;
+}
+
+.back-link {
+	color: #ab2430;
+}
+
+/*Construção da Página Currículo*/
+
+.main {
+	padding-top: 80px;
+	padding-left: 100px;
+	padding-right: 180px;
+	padding-bottom: 80px;
+
+	animation-name: troca-paginas;
+	animation-duration: 2s;
+
+}
+
+.cv-pic {
+
+	width: 220px;
+	float: right;
+	border-radius: 30px;
+}
+
+.main h1 {
+  color: #ffffff;
+  font-weight: normal;
+
+}
+
+.main h2 {
+
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.main h3 {
+
+	color: #ab2430;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.main h4 {
+
+	font-weight: 100;
+	color: #ffffff;
+	float: right;
+
+}
+
+.main p {
+
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 25px;
+	text-align: justify;
+}
+
+.main li {
+
+	color: #ffffff;
+	font-weight: 100;
+	line-height: 25px;
+	text-align: justify;
+}
+
+.caminho {
+   list-style: none;
+   padding-left: 0px;
+   color: #8a8b8a;
+
+}
+
+.caminho li {
+
+	display: inline-block;
+}
+
+.caminho a {
+
+	color: #ffffff;
+}
+
+/* Construção da Página Contatos */
+
+.contato-pic {
+
+	width: 50px;
+	margin-right: 10px;
+
+}
+
+/* Construção da Página Portfólio */
+
+.miniatura {
+
+  	width: 320px;
+  	height: 320px;
+	/*background-color: red;*/
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-size: contain;
+	overflow: hidden;
+
+
+}
+
+.miniatura a {
+	text-decoration: none;
+}
+
+.blackbox {
+
+	background-color: black;
+	text-align: center;
+	width: 320px;
+	height: 320px;
+	opacity: 0;
+	padding-top: 130px;
+	transition: 1s;
+
+	 
+}
+
+.blackbox:hover {
+	opacity: 0.5;
+	transition: 1s;
+}
+
+.blackbox-text {
+
+	width: 320px;
+	height: 320px;
+	padding-top: 0;
+}
+
+.blackbox-text h2 {
+
+	color: #ab2430;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 0;
+
+}
+
+.blackbox-tex h3 {
+
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	margin-top: 0;
+	
+}
+
+/* Construção da Página Trabalhos Futuros */
+
+.trabalho_foto {
+
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px
+	
+}
+
+/* Animações com CSS */
+
+@keyframes profile-capa {
+	0% {opacity: 0; transform: translate(0px,20px);}
+  100% {opacity: 1; transform: translate(0px,0px);}
+
+}
+
+@keyframes profile-titulo {
+	0% {opacity: 0; transform: translate(0px,-20px);}
+  100% {opacity: 1; transform: translate(0px,0px);}
+
+}
+
+@keyframes troca-paginas {
+	0% {opacity: 0; transform: translate(-20px,0px);}
+  100% {opacity: 1; transform: translate(0px,0px);}
+
+}
+
+@keyframes navegacao {
+	0% {opacity: 0;}
+   50% {opacity: 0;}
+  100% {opacity: 1;}
+
+}
+
+
+/*WebSite Responsivo com CSS Media Query*/
+
+/* ao fazer o media, informa que o conjunto de estilos criado no media
+   irá funcionar para telas menores do que 1000px */
+
+@media (max-width: 1000px) 
+{
+
+
+	.navegation li {
+		display: none;
+	}
+
+	.navegation li.menu-cel {
+		display: inline-block;
+	}
+
+	.capa div {
+
+	display: block;
+	height: auto;
+	}
+
+	.profile-pic img {
+		margin-top: 0;
+		max-width: 80%;
+	}
+
+
+	.profile-pic {
+		width: 100%;
+		/*background-color: yellow;*/
+
+	}
+
+	.profile-title {
+		width: 100%;
+		/*background-color: green;*/
+
+	}
+
+	.profile-title h1 {
+		margin-top: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.profile-title h2 {
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.main {
+	padding-top: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 10px;
+	/*text-align: left;*/
+    }
+
+    .main p {   /*verificando cv para o celular*/
+    	line-height: 30px;
+    	text-align: left;
+    }
+
+    .main h4 {      /*verificando cv para o celular*/
+    	float: none;
+    }
+
+    .caminho {
+
+    	font-size: 14px;
+    }
+
+    /*.cv-pic {*/
+
+    	/*float: none;*/
+    	/*max-width: 100%;*/
+    /*}*/ 
+
+    .miniatura {
+    	max-width: 100%;
+    	background-size: auto 100%;
+    }
+
+    .blackbox {
+    	opacity: 0.8;
+    }
+
+    .menujs {
+
+    	height: auto;
+
+    }
+
+    .menujs ul {
+    	height: auto;
+    	text-align: center;
+    	padding-right: 15%;
+    	padding-left: 15%;
+
+    }
+
+    .menujs li {
+    	display: block;
+    	border-bottom: solid white 1px; 
+    	width: 100%;
+    	padding: 0;
+    }
+
+	
+}
+
+
+
+
+
